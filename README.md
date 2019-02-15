@@ -1,4 +1,10 @@
-# Tour-Buddy
+### Tour-Buddy
+
+An application for travel enthusiast to learn new places.
+
+
+**Technologies** Android,Java fragments, Recycler view.
+
 
 ## Screenshots
 
