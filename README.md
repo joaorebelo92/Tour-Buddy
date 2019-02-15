@@ -16,8 +16,12 @@
 
 <img src="Trivago.jpg" width="200" height="400" />
 
-<img src="Login.jpg" width="200" height="400" />
+<img src="FavoritePlaces.jpg" width="200" height="400" />
 
-<img src="Login.jpg" width="200" height="400" />
+<img src="Language.jpg" width="200" height="400" />
+
+<img src="Item.jpg" width="200" height="400" />
+
+<img src="Item2.jpg" width="200" height="400" />
 
 
