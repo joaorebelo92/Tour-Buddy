@@ -3,7 +3,7 @@
 An application for travel enthusiast to learn new places.
 
 
-**Technologies** Android,Java fragments, Recycler view.
+**Technologies used** Android,Java fragments, Recycler view.
 
 
 ## Screenshots
