@@ -2,4 +2,4 @@
 
 # Screenshots
 
-<img src="Login.Jpg" width="200" height="400" />
+<img src="Login.jpg" width="200" height="400" />
