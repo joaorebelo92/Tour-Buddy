@@ -17,9 +17,9 @@ An Androd app to help travel enthusiasts discover new places.
 
 App is achitected using the MVC design pattern. 
 
-Android Activity Screens: https://github.com/joaorebelo92/Tour-Buddy/tree/master/app/src/main/java/com/example/joorebelo/finalproject
+* Android Activity Screens: https://github.com/joaorebelo92/Tour-Buddy/tree/master/app/src/main/java/com/example/joorebelo/finalproject
 
-Data Models: https://github.com/joaorebelo92/Tour-Buddy/blob/master/app/src/main/java/com/example/joorebelo/finalproject/model/RankedPlaces.java
+* Data Models: https://github.com/joaorebelo92/Tour-Buddy/blob/master/app/src/main/java/com/example/joorebelo/finalproject/model/RankedPlaces.java
 
 
 
