@@ -1,12 +1,30 @@
-# Tour-Buddy
+# Tour Buddy
+---
+An Androd app to help travel enthusiasts discover new places.
 
-An application for travel enthusiast to learn new places.
+**Language**: Java
+**Persistent Storage**: SQLite
+**Frameworks**: Android SDK
+**User Interface**: Fragments, Custom view
 
+# How to Use
+---
+1. Clone project
+2. Open project in `Android Studio`
 
-**Technologies used** Android,Java fragments, Recycler view.
+# Code Samples
+---
+
+App is achitected using the MVC design pattern. 
+
+Android Activity Screens: https://github.com/joaorebelo92/Tour-Buddy/tree/master/app/src/main/java/com/example/joorebelo/finalproject
+
+Data Models: https://github.com/joaorebelo92/Tour-Buddy/blob/master/app/src/main/java/com/example/joorebelo/finalproject/model/RankedPlaces.java
+
 
 
 # Screenshots
+---
 
 ## Login Page
 <img src="screenshots/Login.jpg" width="200" height="400" />
