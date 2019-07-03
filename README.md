@@ -1,19 +1,19 @@
 # Tour Buddy
----
+
 An Androd app to help travel enthusiasts discover new places.
 
-**Language**: Java
-**Persistent Storage**: SQLite
-**Frameworks**: Android SDK
-**User Interface**: Fragments, Custom view
+* **Language**: Java
+* **Persistent Storage**: SQLite
+* **Frameworks**: Android SDK
+* **User Interface**: Fragments, Custom view
 
 # How to Use
----
+
 1. Clone project
 2. Open project in `Android Studio`
 
 # Code Samples
----
+
 
 App is achitected using the MVC design pattern. 
 
