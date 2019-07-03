@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".PlaceActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:id="@+id/txtPlaceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:text="@string/strPlaceName"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgPlace"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txtPlaceName"
+                app:layout_constraintDimensionRatio="1:1"
+                app:srcCompat="@drawable/cn_tower" />
+
+            <TextView
+                android:id="@+id/txtCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imgPlace"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/strCountry"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txtCountry"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/strCity"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <RatingBar
+                android:id="@+id/ratingBarGlobal"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCity"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:foregroundGravity="center_horizontal"
+                android:numStars="5"
+                android:stepSize="1"
+                android:transformPivotX="0dp" />
+
+            <ImageView
+                android:id="@+id/imgFavotite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/txtCountry"
+                android:layout_alignTop="@+id/ratingBarGlobal"
+                android:layout_below="@+id/txtCity"
+                android:layout_marginEnd="16dp"
+                app:srcCompat="@drawable/ic_action_favorite_empty" />
+
+            <ImageView
+                android:id="@+id/imgLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ratingBarGlobal"
+                android:layout_below="@+id/txtCity"
+                android:layout_marginEnd="16dp"
+                android:layout_toStartOf="@id/imgFavotite"
+                app:srcCompat="@drawable/ic_action_location" />
+
+            <ImageView
+                android:id="@+id/imgWebLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ratingBarGlobal"
+                android:layout_below="@+id/txtCity"
+                android:layout_marginEnd="16dp"
+                android:layout_toStartOf="@id/imgLocation"
+                app:srcCompat="@drawable/ic_action_web_link" />
+
+            <TextView
+                android:id="@+id/txtCountRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingBarGlobal"
+                android:layout_alignStart="@id/ratingBarGlobal"
+                android:layout_alignEnd="@id/ratingBarGlobal"
+                android:text="0"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="center"
+                android:textSize="10sp"/>
+
+            <TextView
+                android:id="@+id/txtPlaceDescriptionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCountRate"
+                android:layout_marginTop="5dp"
+                android:text="@string/strDescriptionTitle"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPlaceDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txtPlaceDescriptionTitle"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/strDescription"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/txtVideoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPlaceDescription"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="@string/strVideoTitle" />
+
+            <VideoView
+                android:id="@+id/videoPlayerPlace"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/txtVideoTitle"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/txtRatePlaceTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/videoPlayerPlace"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="@string/strRateThisPlace" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:numStars="5"
+                android:stepSize="1"
+                android:layout_below="@+id/txtRatePlaceTitle" />
+
+            <Button
+                android:id="@+id/btnRatePlace"
+                android:layout_width="wrap_content"
+                android:layout_height="58dp"
+                android:layout_alignEnd="@+id/videoPlayerPlace"
+                android:layout_below="@+id/txtRatePlaceTitle"
+                android:text="@string/strRateIt"
+                android:layout_marginBottom="20dp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

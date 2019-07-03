@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp">
+
+    <ImageView
+        android:id="@+id/imgPlace"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/cn_tower" />
+
+    <TextView
+        android:id="@+id/txtPlaceName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_toEndOf="@id/imgPlace"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="TextView"/>
+
+    <TextView
+        android:id="@+id/txtCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPlaceName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/imgPlace"
+        android:text="TextView"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/txtCity"
+        android:layout_toEndOf="@id/imgPlace"
+        android:textSize="16sp"
+        android:text="TextView" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgPlace"
+        android:foregroundGravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:numStars="5"
+        android:stepSize="1"
+        android:transformPivotX="0dp"
+        />
+
+    <TextView
+        android:id="@+id/txtCountRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBar"
+        android:layout_alignStart="@id/ratingBar"
+        android:layout_alignEnd="@id/ratingBar"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/imgFavotite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/ratingBar"
+        android:layout_marginEnd="17dp"
+        android:layout_below="@+id/txtCountry"
+        app:srcCompat="@drawable/ic_action_favorite_empty"
+        />
+
+
+</RelativeLayout>

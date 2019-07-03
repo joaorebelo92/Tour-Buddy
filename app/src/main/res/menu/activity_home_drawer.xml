@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_place_ranking"
+            android:icon="@drawable/ic_place_ranking"
+            android:title="@string/strBestPlacesByRanking" />
+        <item
+            android:id="@+id/nav_favorite_places"
+            android:icon="@drawable/ic_favorite_places"
+            android:title="@string/strFavoritePlaces" />
+        <item
+            android:id="@+id/nav_search_places"
+            android:icon="@drawable/ic_search_places"
+            android:title="@string/strSearchPlace" />
+    </group>
+
+    <item android:title="@string/strCommunicate">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_action_profile"
+                android:title="@string/strProfile" />
+            <item
+                android:id="@+id/nav_support"
+                android:icon="@drawable/ic_action_support"
+                android:title="@string/strSupport" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_action_logout"
+                android:title="@string/strLogOutMenu" />
+        </menu>
+    </item>
+
+</menu>
